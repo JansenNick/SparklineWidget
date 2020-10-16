@@ -1,15 +1,17 @@
-import { Component, ReactNode, createElement } from "react";
+import { createElement } from "react";
 import { Sparklines, SparklinesLine } from 'react-sparklines-typescript';
 
-export interface SparklineCompProps {
+interface SparklineCompProps {
     color: string;
     data: number[];
 }
 
-export class SparklineComp extends Component<SparklineCompProps> {
-    render(): ReactNode {
-        return <Sparklines data={this.props.data}>
-            <SparklinesLine color={this.props.color}/>
-      </Sparklines>
-    }
-}
+const SparklineComp : React.FC<SparklineCompProps> = ({color,data}) => {
+    return (
+        <Sparklines data={data}>
+            <SparklinesLine color={color}/>
+        </Sparklines>
+    );
+};
+
+export default SparklineComp;

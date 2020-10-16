@@ -1,5 +1,6 @@
-import { isIphoneWithNotch }                           from "../helpers/_functions/device.js";
-import { background, button, contrast, font, spacing } from "../variables.js";
+import { isIphoneWithNotch }                 from "../helpers/_functions/device.js";
+import { shadeBlendConvert }                 from "../helpers/_functions/shadeblendconvert.js";
+import { background, button, font, spacing } from "../variables.js";
 
 
 //
@@ -16,7 +17,7 @@ import { background, button, contrast, font, spacing } from "../variables.js";
 ========================================================================== */
 
 // Button styles when the chose to show the indicator above the buttons
-const introScreenButtonPaginationAbove = {
+export const introScreenButtonPaginationAbove = {
     container: {
         // Ripplecolor and all ViewStyle properties are allowed
         flexDirection: "row",
@@ -42,7 +43,7 @@ const introScreenButtonPaginationAbove = {
     },
 };
 // Button styles when the chose to show the indicator between the buttons
-const introScreenButtonPaginationBetween = {
+export const introScreenButtonPaginationBetween = {
     container: {
         // Ripplecolor and all ViewStyle properties are allowed
         flexDirection: "row",
@@ -96,7 +97,7 @@ export const com_mendix_widget_native_introscreen_IntroScreen = {
     },
     dotStyle: {
         // All ViewStyle properties are allowed
-        backgroundColor: contrast.lower,
+        backgroundColor: shadeBlendConvert(0.5, background.brandPrimary),
         transform: [{ scale: 0.5 }],
     },
     activeDotStyle: {
@@ -112,7 +113,6 @@ export const com_mendix_widget_native_introscreen_IntroScreen = {
             marginTop: 30,
             flexDirection: "row",
             justifyContent: "center",
-            width: "100%",
         },
         buttonSkip: introScreenButtonPaginationAbove,
         buttonPrevious: introScreenButtonPaginationAbove,

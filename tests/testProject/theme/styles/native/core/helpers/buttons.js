@@ -93,7 +93,7 @@ export const btnSecondaryInversed = {
 };
 
 // Button Icon Only
-export const btnIcon = {
+export const btnIconPrimary = {
     container: {
         borderWidth: 0,
         backgroundColor: "transparent",
@@ -101,38 +101,33 @@ export const btnIcon = {
         paddingHorizontal: 0,
     },
     icon: {
-        color: font.color,
+        color: button.primary.backgroundColor,
     },
     caption: {
         fontSize: 0,
     },
 };
-export const btnIconPrimary = merge(btnIcon, {
+export const btnIconSecondary = merge(btnIconPrimary, {
     icon: {
-        color: button.primary.backgroundColor,
+        color: contrast.regular,
     },
 });
-export const btnIconSecondary = merge(btnIcon, {
-    icon: {
-        color: contrast.low,
-    },
-});
-export const btnIconSuccess = merge(btnIcon, {
+export const btnIconSuccess = merge(btnIconPrimary, {
     icon: {
         color: button.success.backgroundColor,
     },
 });
-export const btnIconWarning = merge(btnIcon, {
+export const btnIconWarning = merge(btnIconPrimary, {
     icon: {
         color: button.warning.backgroundColor,
     },
 });
-export const btnIconDanger = merge(btnIcon, {
+export const btnIconDanger = merge(btnIconPrimary, {
     icon: {
         color: button.danger.backgroundColor,
     },
 });
-export const btnIconWhite = merge(btnIcon, {
+export const btnIconWhite = merge(btnIconPrimary, {
     icon: {
         color: "#FFF",
     },
@@ -140,16 +135,15 @@ export const btnIconWhite = merge(btnIcon, {
 
 export const btnIconGrayRounded = {
     container: {
-        height: 80,
-        width: 80,
+        flex: 0,
         padding: 10,
         borderRadius: 20,
         borderWidth: 0,
-        backgroundColor: contrast.lowest,
+        backgroundColor: contrast.lower,
     },
     icon: {
         size: 30,
-        color: contrast.high,
+        color: contrast.higher,
     },
     caption: {
         fontSize: 0,

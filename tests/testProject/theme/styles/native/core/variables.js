@@ -1,16 +1,16 @@
-import { Platform }                                    from "react-native";
+import { Dimensions, Platform }                        from "react-native";
 import * as custom                                     from "../app/custom-variables";
-import adjustFont, { height, width }                   from "./helpers/_functions/adjustfont";
+import adjustFont                                      from "./helpers/_functions/adjustfont";
 import { setColorBasedOnBackground, setContrastScale } from "./helpers/_functions/convertcolors";
 import { anyColorToRgbString }                         from "./helpers/_functions/convertcolors.js";
 import merge                                           from "./helpers/_functions/mergeobjects";
+import { shadeBlendConvert }                           from "./helpers/_functions/shadeblendconvert.js";
 
 //== Global variables
 //## Variables to be used during styling
 //-------------------------------------------------------------------------------------------------------------------//
 // System defined read-only values
-export const deviceHeight = height;
-export const deviceWidth = width;
+export const { height: deviceHeight, width: deviceWidth } = Dimensions.get("window");
 
 // Brand Style
 let brand = {
@@ -188,7 +188,7 @@ let navigation = {
         activityIndicatorColor: font.color,
         backgroundColor: `rgba(0, 0, 0, 0.5)`,
         containerBackgroundColor: background.secondary,
-        shadowColor: "#000", // Only for iOS
+        shadowColor: shadeBlendConvert(-0.6, background.primary), // Only for iOS
         fontSize: font.size,
     },
 };
@@ -207,12 +207,6 @@ let tabcontainer = {
     label: {
         color: contrast.highest,
         fontWeight: font.weightBold,
-        textTransform: "uppercase",
-    },
-    activeLabel: {
-        color: brand.primary,
-        fontWeight: font.weightBold,
-        textTransform: "uppercase",
     },
 };
 tabcontainer = merge(tabcontainer, custom.tabcontainer || {});

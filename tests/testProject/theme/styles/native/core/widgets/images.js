@@ -20,8 +20,6 @@ export const Image = {
     },
     image: {
         // All ImageStyle properties are allowed
-        maxWidth: "100%",
-        maxHeight: "100%",
         resizeMode: "cover",
     },
 };
@@ -33,8 +31,6 @@ export const ImageViewer = {
     },
     image: {
         // All ImageStyle properties are allowed
-        maxWidth: "100%",
-        maxHeight: "100%",
         resizeMode: "cover",
     },
 };

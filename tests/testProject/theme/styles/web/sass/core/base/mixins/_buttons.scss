@@ -26,7 +26,6 @@
     }
     &.disabled,
     &[disabled],
-    &[aria-disabled],
     fieldset[disabled] {
         &,
         &:hover,
@@ -43,7 +42,6 @@
         @if $color != $btn-default-color {
             color: $border;
         }
-
         &:hover,
         &:focus,
         &:active,
@@ -62,7 +60,6 @@
         @if $color != $btn-default-color {
             color: $background;
         }
-
         &:hover {
             border-color: $btn-link-bg-hover;
             background-color: $btn-link-bg-hover;

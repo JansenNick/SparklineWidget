@@ -5,6 +5,7 @@ import {
     setColorBasedOnBackground,
     setContrastScale,
 }                                  from "../core/helpers/_functions/convertcolors";
+import { shadeBlendConvert }       from "../core/helpers/_functions/shadeblendconvert.js";
 
 /*
 ==> You can find a copy of the core variables below. (From styles/native/core/variables.js)
@@ -187,7 +188,7 @@ export const navigation = {
         activityIndicatorColor: font.color,
         backgroundColor: `rgba(0, 0, 0, 0.5)`,
         containerBackgroundColor: background.secondary,
-        shadowColor: "#000", // Only for iOS
+        shadowColor: shadeBlendConvert(-0.6, background.primary), // Only for iOS
         fontSize: font.size,
     },
 };
@@ -205,12 +206,6 @@ export const tabcontainer = {
     label: {
         color: contrast.highest,
         fontWeight: font.weightBold,
-        textTransform: "uppercase",
-    },
-    activeLabel: {
-        color: brand.primary,
-        fontWeight: font.weightBold,
-        textTransform: "uppercase",
     },
 };
 

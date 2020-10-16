@@ -73,7 +73,7 @@ return /******/ (function(modules) { // webpackBootstrap
 /******/
 /******/ 	var hotApplyOnUpdate = true;
 /******/ 	// eslint-disable-next-line no-unused-vars
-/******/ 	var hotCurrentHash = "0cf16645a5efeb64f1c2";
+/******/ 	var hotCurrentHash = "94a6a82db6227c476387";
 /******/ 	var hotRequestTimeout = 10000;
 /******/ 	var hotCurrentModuleData = {};
 /******/ 	var hotCurrentChildModule;
@@ -2092,53 +2092,18 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _components_SparklineComp__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./components/SparklineComp */ "./src/components/SparklineComp.tsx");
 /* harmony import */ var _ui_SparklineWidget_css__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./ui/SparklineWidget.css */ "./src/ui/SparklineWidget.css");
 /* harmony import */ var _ui_SparklineWidget_css__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_ui_SparklineWidget_css__WEBPACK_IMPORTED_MODULE_2__);
-var __extends = (undefined && undefined.__extends) || (function () {
-    var extendStatics = function (d, b) {
-        extendStatics = Object.setPrototypeOf ||
-            ({ __proto__: [] } instanceof Array && function (d, b) { d.__proto__ = b; }) ||
-            function (d, b) { for (var p in b) if (b.hasOwnProperty(p)) d[p] = b[p]; };
-        return extendStatics(d, b);
-    };
-    return function (d, b) {
-        extendStatics(d, b);
-        function __() { this.constructor = d; }
-        d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
-    };
-})();
 
 
 
-var SparklineWidget = (function (_super) {
-    __extends(SparklineWidget, _super);
-    function SparklineWidget() {
-        return _super !== null && _super.apply(this, arguments) || this;
+var SparklineWidget = function (_a) {
+    var color = _a.color, sparklineData = _a.sparklineData;
+    var data = [];
+    for (var _i = 0, sparklineData_1 = sparklineData; _i < sparklineData_1.length; _i++) {
+        var datapoint = sparklineData_1[_i];
+        datapoint.number ? data.push(parseInt(datapoint.number.displayValue)) : "0";
     }
-    SparklineWidget.prototype.render = function () {
-        var data = [];
-        this.props.number1 ? data.push(parseInt(this.props.number1.displayValue)) : "0";
-        this.props.number2 ? data.push(parseInt(this.props.number2.displayValue)) : "0";
-        this.props.number3 ? data.push(parseInt(this.props.number3.displayValue)) : "0";
-        this.props.number4 ? data.push(parseInt(this.props.number4.displayValue)) : "0";
-        this.props.number5 ? data.push(parseInt(this.props.number5.displayValue)) : "0";
-        this.props.number6 ? data.push(parseInt(this.props.number6.displayValue)) : "0";
-        this.props.number7 ? data.push(parseInt(this.props.number7.displayValue)) : "0";
-        this.props.number8 ? data.push(parseInt(this.props.number8.displayValue)) : "0";
-        this.props.number9 ? data.push(parseInt(this.props.number9.displayValue)) : "0";
-        this.props.number10 ? data.push(parseInt(this.props.number10.displayValue)) : "0";
-        this.props.number11 ? data.push(parseInt(this.props.number11.displayValue)) : "0";
-        this.props.number12 ? data.push(parseInt(this.props.number12.displayValue)) : "0";
-        this.props.number13 ? data.push(parseInt(this.props.number13.displayValue)) : "0";
-        this.props.number14 ? data.push(parseInt(this.props.number14.displayValue)) : "0";
-        this.props.number15 ? data.push(parseInt(this.props.number15.displayValue)) : "0";
-        this.props.number16 ? data.push(parseInt(this.props.number16.displayValue)) : "0";
-        this.props.number17 ? data.push(parseInt(this.props.number17.displayValue)) : "0";
-        this.props.number18 ? data.push(parseInt(this.props.number18.displayValue)) : "0";
-        this.props.number19 ? data.push(parseInt(this.props.number19.displayValue)) : "0";
-        this.props.number20 ? data.push(parseInt(this.props.number20.displayValue)) : "0";
-        return (Object(react__WEBPACK_IMPORTED_MODULE_0__["createElement"])(_components_SparklineComp__WEBPACK_IMPORTED_MODULE_1__["SparklineComp"], { color: this.props.color, data: data }));
-    };
-    return SparklineWidget;
-}(react__WEBPACK_IMPORTED_MODULE_0__["Component"]));
+    return (Object(react__WEBPACK_IMPORTED_MODULE_0__["createElement"])(_components_SparklineComp__WEBPACK_IMPORTED_MODULE_1__["default"], { color: color, data: data }));
+};
 /* harmony default export */ __webpack_exports__["default"] = (SparklineWidget);
 
 
@@ -2148,43 +2113,23 @@ var SparklineWidget = (function (_super) {
 /*!******************************************!*\
   !*** ./src/components/SparklineComp.tsx ***!
   \******************************************/
-/*! exports provided: SparklineComp */
+/*! exports provided: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "SparklineComp", function() { return SparklineComp; });
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "react");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var react_sparklines_typescript__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react-sparklines-typescript */ "./node_modules/react-sparklines-typescript/build/index.js");
 /* harmony import */ var react_sparklines_typescript__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react_sparklines_typescript__WEBPACK_IMPORTED_MODULE_1__);
-var __extends = (undefined && undefined.__extends) || (function () {
-    var extendStatics = function (d, b) {
-        extendStatics = Object.setPrototypeOf ||
-            ({ __proto__: [] } instanceof Array && function (d, b) { d.__proto__ = b; }) ||
-            function (d, b) { for (var p in b) if (b.hasOwnProperty(p)) d[p] = b[p]; };
-        return extendStatics(d, b);
-    };
-    return function (d, b) {
-        extendStatics(d, b);
-        function __() { this.constructor = d; }
-        d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
-    };
-})();
 
 
-var SparklineComp = (function (_super) {
-    __extends(SparklineComp, _super);
-    function SparklineComp() {
-        return _super !== null && _super.apply(this, arguments) || this;
-    }
-    SparklineComp.prototype.render = function () {
-        return Object(react__WEBPACK_IMPORTED_MODULE_0__["createElement"])(react_sparklines_typescript__WEBPACK_IMPORTED_MODULE_1__["Sparklines"], { data: this.props.data },
-            Object(react__WEBPACK_IMPORTED_MODULE_0__["createElement"])(react_sparklines_typescript__WEBPACK_IMPORTED_MODULE_1__["SparklinesLine"], { color: this.props.color }));
-    };
-    return SparklineComp;
-}(react__WEBPACK_IMPORTED_MODULE_0__["Component"]));
-
+var SparklineComp = function (_a) {
+    var color = _a.color, data = _a.data;
+    return (Object(react__WEBPACK_IMPORTED_MODULE_0__["createElement"])(react_sparklines_typescript__WEBPACK_IMPORTED_MODULE_1__["Sparklines"], { data: data },
+        Object(react__WEBPACK_IMPORTED_MODULE_0__["createElement"])(react_sparklines_typescript__WEBPACK_IMPORTED_MODULE_1__["SparklinesLine"], { color: color })));
+};
+/* harmony default export */ __webpack_exports__["default"] = (SparklineComp);
 
 
 /***/ }),

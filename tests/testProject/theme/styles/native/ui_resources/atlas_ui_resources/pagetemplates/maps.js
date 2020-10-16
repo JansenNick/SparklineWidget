@@ -10,49 +10,23 @@ import { background, border, contrast, spacing } from "../../../core/variables.j
 //== Elements
 //-------------------------------------------------------------------------------------------------------------------//
 
-export const mapsBackground = {
-    container: {
-        position: "absolute",
-        height: "100%",
-        width: "100%",
-        zIndex: 0,
-    },
-};
 
-export const mapsFooter = {
+export const mapContainerBottom = {
     container: {
+        flexDirection: "row",
+        alignItems: "center",
         bottom: 0,
         position: "absolute",
     },
 };
 
-export const mapsFooterSendLocation = {
-    container: {
-        flex: 1,
-        alignSelf: "flex-end",
-        backgroundColor: background.primary,
-        padding: spacing.regular,
-        margin: spacing.regular,
-        borderRadius: border.radius,
-        elevation: 4,
-        shadowColor: contrast.lower,
-        shadowOpacity: 0.8,
-        shadowRadius: 8,
-        shadowOffset: {
-            width: 0,
-            height: 2,
-        },
-    },
-};
-
-
-export const mapsList = {
+export const mapList = {
     container: {
         paddingHorizontal: spacing.regular,
     },
 };
 
-export const mapsListItemImage = {
+export const mapListItemImage = {
     container: {
         backgroundColor: background.primary,
         borderRadius: border.radius,
@@ -60,7 +34,7 @@ export const mapsListItemImage = {
         marginLeft: spacing.smallest,
         marginRight: spacing.regular,
         elevation: 4,
-        shadowColor: contrast.lower,
+        shadowColor: contrast.low,
         shadowOpacity: 0.8,
         shadowRadius: 8,
         shadowOffset: {
@@ -73,7 +47,7 @@ export const mapsListItemImage = {
     },
 };
 
+
 //== Variations
 //-------------------------------------------------------------------------------------------------------------------//
 //
-

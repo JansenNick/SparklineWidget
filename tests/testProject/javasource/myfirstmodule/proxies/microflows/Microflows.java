@@ -15,16 +15,16 @@ import com.mendix.systemwideinterfaces.core.IMendixObject;
 public class Microflows
 {
 	// These are the microflows for the MyFirstModule module
-	public static java.util.List<myfirstmodule.proxies.EarningsNPE> microflow(IContext context)
+	public static java.util.List<myfirstmodule.proxies.ObjectWithData> createData(IContext context)
 	{
 		Map<java.lang.String, Object> params = new HashMap<>();
-		java.util.List<IMendixObject> objs = Core.microflowCall("MyFirstModule.Microflow").withParams(params).execute(context);
-		java.util.List<myfirstmodule.proxies.EarningsNPE> result = null;
+		java.util.List<IMendixObject> objs = Core.microflowCall("MyFirstModule.CreateData").withParams(params).execute(context);
+		java.util.List<myfirstmodule.proxies.ObjectWithData> result = null;
 		if (objs != null)
 		{
 			result = new java.util.ArrayList<>();
 			for (IMendixObject obj : objs)
-				result.add(myfirstmodule.proxies.EarningsNPE.initialize(context, obj));
+				result.add(myfirstmodule.proxies.ObjectWithData.initialize(context, obj));
 		}
 		return result;
 	}

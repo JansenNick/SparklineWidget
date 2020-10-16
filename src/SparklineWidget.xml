@@ -12,147 +12,21 @@
                 <caption>Sparkline Color</caption>
                 <description>Provide an hexadecimal color code e.g. #00A0CF</description>
             </property>
-            <property key="number1" type="attribute" required="false">
-                <caption>Integer 1</caption>
-                <description></description>
-                 <attributeTypes>
-                    <attributeType name="Integer" />
-                 </attributeTypes>
+            <property key="sparklineData" type="object" isList="true" required="false">
+               <caption>Sparkline data</caption>
+               <description/>
+               <properties>
+                  <propertyGroup caption="Object list group">
+                     <property key="number" type="attribute">
+                        <caption>Integer</caption>
+                        <description></description>
+                        <attributeTypes>
+                           <attributeType name="Integer" />
+                        </attributeTypes>
+                     </property>
+                  </propertyGroup>
+               </properties>
             </property>
-             <property key="number2" type="attribute" required="false">
-                <caption>Integer 2</caption>
-                <description></description>
-                 <attributeTypes>
-                    <attributeType name="Integer" />
-                 </attributeTypes>
-            </property>
-            <property key="number3" type="attribute" required="false">
-                <caption>Integer 3</caption>
-                <description></description>
-                 <attributeTypes>
-                    <attributeType name="Integer" />
-                 </attributeTypes>
-            </property>
-            <property key="number4" type="attribute" required="false">
-                <caption>Integer 4</caption>
-                <description></description>
-                 <attributeTypes>
-                    <attributeType name="Integer" />
-                 </attributeTypes>
-            </property>
-            <property key="number5" type="attribute" required="false">
-                <caption>Integer 5</caption>
-                <description></description>
-                 <attributeTypes>
-                    <attributeType name="Integer" />
-                 </attributeTypes>
-            </property>
-            <property key="number6" type="attribute" required="false">
-                <caption>Integer 6</caption>
-                <description></description>
-                 <attributeTypes>
-                    <attributeType name="Integer" />
-                 </attributeTypes>
-            </property>
-            <property key="number7" type="attribute" required="false">
-                <caption>Integer 7</caption>
-                <description></description>
-                 <attributeTypes>
-                    <attributeType name="Integer" />
-                 </attributeTypes>
-            </property>
-            <property key="number8" type="attribute" required="false">
-                <caption>Integer 8</caption>
-                <description></description>
-                 <attributeTypes>
-                    <attributeType name="Integer" />
-                 </attributeTypes>
-            </property>
-            <property key="number9" type="attribute" required="false">
-                <caption>Integer 9</caption>
-                <description></description>
-                 <attributeTypes>
-                    <attributeType name="Integer" />
-                 </attributeTypes>
-            </property>
-            <property key="number10" type="attribute" required="false">
-                <caption>Integer 10</caption>
-                <description></description>
-                 <attributeTypes>
-                    <attributeType name="Integer" />
-                 </attributeTypes>
-            </property>
-            <property key="number11" type="attribute" required="false">
-                <caption>Integer 11</caption>
-                <description></description>
-                 <attributeTypes>
-                    <attributeType name="Integer" />
-                 </attributeTypes>
-            </property>
-            <property key="number12" type="attribute" required="false">
-                <caption>Integer 12</caption>
-                <description></description>
-                 <attributeTypes>
-                    <attributeType name="Integer" />
-                 </attributeTypes>
-            </property>
-            <property key="number13" type="attribute" required="false">
-                <caption>Integer 13</caption>
-                <description></description>
-                 <attributeTypes>
-                    <attributeType name="Integer" />
-                 </attributeTypes>
-            </property>
-            <property key="number14" type="attribute" required="false">
-                <caption>Integer 14</caption>
-                <description></description>
-                 <attributeTypes>
-                    <attributeType name="Integer" />
-                 </attributeTypes>
-            </property>
-            <property key="number15" type="attribute" required="false">
-                <caption>Integer 15</caption>
-                <description></description>
-                 <attributeTypes>
-                    <attributeType name="Integer" />
-                 </attributeTypes>
-            </property>
-            <property key="number16" type="attribute" required="false">
-                <caption>Integer 16</caption>
-                <description></description>
-                 <attributeTypes>
-                    <attributeType name="Integer" />
-                 </attributeTypes>
-            </property>
-            <property key="number17" type="attribute" required="false">
-                <caption>Integer 17</caption>
-                <description></description>
-                 <attributeTypes>
-                    <attributeType name="Integer" />
-                 </attributeTypes>
-            </property>
-            <property key="number18" type="attribute" required="false">
-                <caption>Integer 18</caption>
-                <description></description>
-                 <attributeTypes>
-                    <attributeType name="Integer" />
-                 </attributeTypes>
-            </property>
-            <property key="number19" type="attribute" required="false">
-                <caption>Integer 19</caption>
-                <description></description>
-                 <attributeTypes>
-                    <attributeType name="Integer" />
-                 </attributeTypes>
-            </property>
-            <property key="number20" type="attribute" required="false">
-                <caption>Integer 20</caption>
-                <description></description>
-                 <attributeTypes>
-                    <attributeType name="Integer" />
-                 </attributeTypes>
-            </property>
-            
         </propertyGroup>
     </properties>
 </widget>
